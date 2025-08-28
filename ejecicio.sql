@@ -206,3 +206,18 @@ select * from docente;
 select * from notas;
 select * from tutorias;
 select * from materia;
+
+SELECT * from 2_clase.docente;
+SELECT  nom_docente, correo FROM 2_clase.docente;
+SELECT nom_docente, correo, telefono FROM 2_clase.docente WHERE nom_docente = "Felipe";
+SELECT nom_docente, registro_doc FROM 2_clase.docente WHERE registro_doc = "2025-08-26 20:38:48";
+SELECT * from 2_clase.estudiantes;
+SELECT nom_estudiante, telefono FROM 2_clase.estudiantes ORDER BY telefono DESC;
+SELECT nom_estudiante FROM 2_clase.estudiantes LIMIT 5;
+SELECT nom_estudiante FROM 2_clase.estudiantes WHERE nom_estudiante LIKE '%A';
+SELECT nom_estudiante,ape_estudiante FROM 2_clase.estudiantes WHERE ape_estudiante LIKE '%Ramirez%';
+SELECT * from 2_clase.tutorias;
+SELECT COUNT(*) FROM 2_clase.tutorias;
+SELECT COUNT(*) FROM 2_clase.docente;
+SELECT * from 2_clase.docente_materia;
+/*SELECT nombre_materia, COUNT(*) AS total_docente FROM nom_docente GROUP BY 2_clase.materia;*/
